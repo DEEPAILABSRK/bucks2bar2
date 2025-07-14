@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucks2Bar - Currency Converter</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Bucks2Bar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#converter">Converter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-light py-5">
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center my-5">
+              <h1 class="display-5 fw-bold text-primary mb-2">
+                Bucks2Bar Currency Converter
+              </h1>
+              <p class="lead mb-4">
+                Easily convert your money to equivalent drinks around the world!
+              </p>
+              <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#converter"
+                  >Try It Now</a
+                >
+                <a class="btn btn-outline-primary btn-lg px-4" href="#about"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">About Bucks2Bar</h2>
+            <p class="lead">
+              Ever wondered how many drinks you could buy with your money in
+              different countries?
+            </p>
+            <p>
+              Bucks2Bar helps you understand the real value of your money by
+              showing you how many drinks you could purchase in various
+              destinations around the world. Perfect for travelers, digital
+              nomads, and anyone curious about the cost of living differences
+              globally.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow rounded-4">
+              <div class="card-body p-5">
+                <div
+                  class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                >
+                  <i class="bi bi-currency-exchange"></i>
+                </div>
+                <h2 class="h4 fw-bold">How It Works</h2>
+                <p>
+                  Simply enter the amount in your currency, select your current
+                  location and destination, and we'll show you how many drinks
+                  you could buy with that money.
+                </p>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check text-primary"></i> Real-time currency
+                    conversion
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-primary"></i> Updated drink
+                    prices in 50+ countries
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-primary"></i> Compare beer, wine,
+                    and cocktail prices
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Converter Section -->
+    <section id="converter" class="py-5 bg-light">
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6">
+            <div class="text-center mb-5">
+              <h2 class="fw-bold">Currency Converter</h2>
+              <p class="lead">How many drinks can your money buy?</p>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow rounded-4">
+              <div class="card-body p-5">
+                <form id="converterForm">
+                  <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label for="amount" class="form-label">Amount</label>
+                      <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="amount"
+                          placeholder="Enter amount"
+                          min="1"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="sourceCurrency" class="form-label"
+                        >Your Currency</label
+                      >
+                      <select class="form-select" id="sourceCurrency" required>
+                        <option value="USD" selected>US Dollar (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="GBP">British Pound (GBP)</option>
+                        <option value="JPY">Japanese Yen (JPY)</option>
+                        <option value="CAD">Canadian Dollar (CAD)</option>
+                        <!-- More options can be added -->
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label for="sourceCountry" class="form-label"
+                        >Your Location</label
+                      >
+                      <select class="form-select" id="sourceCountry" required>
+                        <option value="USA" selected>United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Canada">Canada</option>
+                        <!-- More options can be added -->
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="destCountry" class="form-label"
+                        >Destination Country</label
+                      >
+                      <select class="form-select" id="destCountry" required>
+                        <option value="USA">United States</option>
+                        <option value="UK" selected>United Kingdom</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Thailand">Thailand</option>
+                        <!-- More options can be added -->
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="drinkType" class="form-label">Drink Type</label>
+                    <select class="form-select" id="drinkType" required>
+                      <option value="beer" selected>
+                        Beer (Pint/Local Beer)
+                      </option>
+                      <option value="wine">Wine (Glass/House Wine)</option>
+                      <option value="cocktail">
+                        Cocktail (Basic Mixed Drink)
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                      Convert
+                    </button>
+                  </div>
+                </form>
+
+                <div id="result" class="mt-4 text-center d-none">
+                  <h3 class="fw-bold text-primary">Conversion Result</h3>
+                  <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <div class="card bg-light">
+                        <div class="card-body">
+                          <h4>Your Location</h4>
+                          <p class="lead mb-1">
+                            <span id="homeAmount">$50</span>
+                          </p>
+                          <p class="mb-0">buys approximately</p>
+                          <h3 class="text-primary my-2">
+                            <span id="homeDrinks">10</span> drinks
+                          </h3>
+                          <p class="small text-muted mb-0">
+                            Average price: <span id="homePrice">$5</span> per
+                            drink
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card bg-primary text-white">
+                        <div class="card-body">
+                          <h4>Destination</h4>
+                          <p class="lead mb-1">
+                            <span id="destAmount">£38</span>
+                          </p>
+                          <p class="mb-0">buys approximately</p>
+                          <h3 class="text-white my-2">
+                            <span id="destDrinks">7</span> drinks
+                          </h3>
+                          <p class="small text-white-50 mb-0">
+                            Average price: <span id="destPrice">£5.5</span> per
+                            drink
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6">
+            <div class="text-center mb-5">
+              <h2 class="fw-bold">Contact Us</h2>
+              <p class="lead">Have questions or suggestions? Let us know!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow rounded-4">
+              <div class="card-body p-5">
+                <form id="contactForm">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      placeholder="Your message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+      <div class="container px-5">
+        <div
+          class="row align-items-center justify-content-between flex-column flex-sm-row"
+        >
+          <div class="col-auto">
+            <div class="small m-0">Copyright &copy; Bucks2Bar 2025</div>
+          </div>
+          <div class="col-auto">
+            <a class="link-light small" href="#about">About</a>
+            <span class="text-white mx-1">&middot;</span>
+            <a class="link-light small" href="#converter">Converter</a>
+            <span class="text-white mx-1">&middot;</span>
+            <a class="link-light small" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

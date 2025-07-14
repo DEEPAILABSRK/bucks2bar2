@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Serve Bucks2Bar",
+      "type": "shell",
+      "command": "powershell -c \"$p = Start-Process powershell -ArgumentList '-NoExit', '-Command', '& { cd \"${workspaceFolder}\"; python -m http.server 8000 }' -PassThru; Start-Process \"http://localhost:8000\" -ErrorAction SilentlyContinue; Write-Host 'Server started at http://localhost:8000'; Write-Host 'Press Ctrl+C to stop the server'; $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown'); Stop-Process -Id $p.Id -Force\"",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}
