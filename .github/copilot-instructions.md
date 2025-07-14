@@ -1,8 +1,8 @@
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 
-# Bucks2Bar Project Instructions
+# Bucks2Bar2 Project Instructions
 
-This is a Bucks2Bar currency converter web application that converts currency amounts to equivalent drinks around the world. The project uses Bootstrap 5 for responsive design.
+This is a Bucks2Bar2 currency converter web application that converts currency amounts to equivalent drinks around the world. The project uses Bootstrap 5 for responsive design.
 
 ## Project Structure and Technologies
 

@@ -1,6 +1,6 @@
-# Bucks2Bar - Currency Converter
+# Bucks2Bar2 - Currency Converter
 
-Bucks2Bar is a web application that converts your money into equivalent drinks around the world. This tool helps travelers understand the real value of their money by showing how many beers, wines, or cocktails they can buy in different countries.
+Bucks2Bar2 is a web application that converts your money into equivalent drinks around the world. This tool helps travelers understand the real value of their money by showing how many beers, wines, or cocktails they can buy in different countries.
 
 ## Features
 

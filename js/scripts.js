@@ -1,5 +1,5 @@
 /**
- * Bucks2Bar - Currency Converter
+ * Bucks2Bar2 - Currency Converter
  * Main JavaScript file
  */
 
