@@ -20,12 +20,16 @@ Bucks2Bar2 is a web application that converts your money into equivalent drinks 
 ## Project Structure
 
 ```
-bucks2bar/
+bucks2bar2/
 ├── css/
 │   └── styles.css
 ├── js/
 │   └── scripts.js
 ├── images/
+├── .github/
+│   └── copilot-instructions.md
+├── .vscode/
+│   └── tasks.json
 ├── index.html
 └── README.md
 ```

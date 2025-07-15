@@ -1,0 +1,30 @@
+{
+  "name": "bucks2bar",
+  "version": "1.0.0",
+  "description": "Bucks2Bar - Currency to Drinks Converter",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "serve": "python -m http.server 8000"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFiles": [
+      "./jest.setup.js"
+    ]
+  },
+  "keywords": [
+    "currency",
+    "converter",
+    "drinks"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
+    "jest-environment-jsdom": "^27.3.1"
+  }
+}
